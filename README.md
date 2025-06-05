@@ -1,7 +1,7 @@
 ## Add config files
 
 ```bash
-ln -s ~/.bashrc <config_directory>/.bashrc
+./sync.sh
 ```
 
 <br>
