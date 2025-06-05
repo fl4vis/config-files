@@ -3,8 +3,8 @@
 echo "🔄 Syncing config files from system to repo..."
 
 cp ~/.bashrc ./.bashrc
-cp ~/.config/tmux ./tmux
-cp ~/.config/nvim ./nvim
+cp -r ~/.config/tmux ./tmux
+cp -r ~/.config/nvim ./nvim
 
 echo "✅ Done syncing. Now committing..."
 
