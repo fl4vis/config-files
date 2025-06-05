@@ -14,8 +14,8 @@ rsync -av --delete ~/.config/yazi/ ./yazi/
 
 echo "✅ Done syncing. Now committing..."
 
-# git add .
-# git commit -m "Sync config changes"
-# git push origin main
-#
-# echo "🚀 Changes pushed to GitHub"
+git add .
+git commit -m "Sync config changes"
+git push origin main
+
+echo "🚀 Changes pushed to GitHub"
