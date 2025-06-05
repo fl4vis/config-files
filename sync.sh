@@ -3,6 +3,7 @@
 echo "🔄 Syncing config files from system to repo..."
 
 cp ~/.bashrc ./.bashrc
+cp ~/.gitconfig ./.gitconfig
 cp ~/.config/starship.toml ./starship.toml
 
 rsync -av --delete ~/.config/tmux/tmux.conf ./tmux/tmux.conf
