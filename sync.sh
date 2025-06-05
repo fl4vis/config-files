@@ -3,8 +3,9 @@
 echo "🔄 Syncing config files from system to repo..."
 
 cp ~/.bashrc ./.bashrc
-cp -r ~/.config/tmux ./tmux
-cp -r ~/.config/nvim ./nvim
+rsync -av --delete ~/.config/tmux/ ./tmux/
+rsync -av --delete ~/.config/nvim/ ./nvim/
+
 
 echo "✅ Done syncing. Now committing..."
 
