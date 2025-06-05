@@ -1,0 +1,1 @@
+/home/fl4vis/.bashrc
