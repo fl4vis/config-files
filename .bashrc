@@ -163,11 +163,11 @@ export XDG_SESSION_TYPE=wayland
 export GBM_BACKEND=nvidia-drm
 export __GLX_VENDOR_LIBRARY_NAME=nvidia
 
-alias kv='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
-alias av='NVIM_APPNAME=nvim-astro nvim'     # Kickstart
-
-alias kubectl='microk8s.kubectl'
+# k8s
+alias k='microk8s.kubectl'
 source <(microk8s.kubectl completion bash)
+complete -o default -F __start_kubectl k
+
 
 
 sonar() {
